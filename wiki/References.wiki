@@ -1,0 +1,8 @@
+#summary References.
+#labels Featured
+
+ * http://is.ifmo.ru/books/switch/1
+ * http://en.wikipedia.org/wiki/Finite_state_machine
+ * http://en.wikipedia.org/wiki/Switch-technology
+ * http://unimod.sourceforge.net/
+ * XML+XSLT http://is.ifmo.ru/projects/metaauto/
