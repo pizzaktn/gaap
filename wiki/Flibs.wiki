@@ -1,0 +1,29 @@
+#summary Flibs problem.
+
+= Flibs =
+
+=== Abstract ===
+
+Papers [1, 2] discuss the “Flib” problem. Flib is a finite state machine (hereinafter automaton), whose aim is to predict single bit value of a specific environment parameter relying on its previous values. The problem is to build such automaton.
+
+When there is no limit on the number of automaton’s states, the problem can be easily solved heuristically. Otherwise trivial solution can’t be found.
+
+For this reason mentioned articles use computerized generation of automata by means of genetic algorithms.
+
+Paper [2] suggests genetic algorithm, which relatively rarely generates automata, capable of making 100% accurate predictions. Meanwhile the question of the number of automaton’s states wasn’t specially discussed, but their amount greatly exceeded required for 100% accuracy.
+
+Our goal is to find a compromise between the number of automaton’s states and the accuracy of its predictions.
+
+=== References ===
+ # Воронин О., Дьюдни А. Дарвинизм в программировании // Мой компьютер. 2004. № 35. http://www.mycomp.kiev.ua/text/7458 
+ # Лобанов П.Г., Шалыто А.А. Использование генетических алгоритмов для автоматического построения конечных автоматов в задаче о “Флибах” / Материалы 1-й Российской  мультиконференции по проблемам управления. Сборник докладов 4-й Всероссийской научной конференции "Управление и информационные технологии" (УИТ-2006). СПбГЭТУ "ЛЭТИ". 2006, с.144–149. http://is.ifmo.ru/works/flib/
+ # Николенко С.И. Лекция по генетическим алгоритмам. http://logic.pdmi.ras.ru/~sergey/teaching/ml/notes-04-genetic.pdf
+
+
+
+
+
+
+
+
+
