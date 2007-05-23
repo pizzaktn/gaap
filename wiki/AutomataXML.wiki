@@ -1,0 +1,101 @@
+#summary Automata XML representation.
+= Introduction =
+
+This XML based language is developed for storing and exchanging automata structures. More detailed description is planned.
+
+= XML Schema =
+
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="automata">
+        <xs:complexType mixed="false">
+            <xs:sequence>
+                <xs:element name="automaton" type="Automaton" minOccurs="1" maxOccurs="unbounded">
+                    <xs:key name="StateID">
+                        <xs:selector xpath=".//state"/>
+                        <xs:field xpath="@id"/>
+                    </xs:key>
+                    <xs:keyref name="StartStateRef" refer="StateID">
+                        <xs:selector xpath=".//automaton"/>
+                        <xs:field xpath="@start"/>
+                    </xs:keyref>
+                    <xs:keyref name="TargetStateRef" refer="StateID">
+                        <xs:selector xpath=".//transition"/>
+                        <xs:field xpath="@target"/>
+                    </xs:keyref>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="Automaton">
+            <xs:selector xpath="./automaton"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+    </xs:element>
+
+    <xs:complexType name="Automaton" mixed="false">
+        <xs:sequence>
+            <xs:element name="state" type="State" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:Name" use="required"/>
+        <xs:attribute name="start" type="xs:Name" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="State" mixed="false">
+        <xs:sequence>
+            <xs:element name="transition" type="Transition" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:Name" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="Transition" mixed="false">
+        <xs:sequence>
+            <xs:element name="action" type="ActionCall" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element name="condition" type="Condition" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="target" type="xs:Name" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="ActionCall">
+        <xs:attribute name="name" type="xs:Name" use="required"/>
+    </xs:complexType>
+
+    <xs:complexType name="Condition">
+        <xs:attribute name="name" type="xs:Name" use="required"/>
+        <xs:attribute name="value" type="xs:boolean" use="required"/>
+    </xs:complexType>
+
+</xs:schema>
+}}}
+
+= Example =
+
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+
+<automata>
+    <automaton id="a1" start="s1">
+        <state id="s1">
+            <transition target="s2">
+                <action name="z1"/>
+                <condition name="x1" value="true"/>
+            </transition>
+            <transition target="s3">
+                <action name="z2"/>
+            </transition>
+        </state>
+        <state id="s2">
+            <transition target="s1">
+                <action name="z1"/>
+                <condition name="x2" value="false"/>
+            </transition>
+            <transition target="s3">
+                <action name="z2"/>
+            </transition>
+        </state>
+        <state id="s3"/>
+    </automaton>
+</automata>
+}}}
