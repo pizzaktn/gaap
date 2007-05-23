@@ -1,5 +1,3 @@
-#summary One-sentence summary of this page.
-
 = Tools Overview =
 
 *GAAP* project consists of the following tools:
@@ -7,7 +5,6 @@
   # FSM meta-model;
   # transformer between XML FSM representation (see [AutomataXML]) and in-memory FSM model;
  # Java Genetic Algorithms Framework
-
 
 
 
