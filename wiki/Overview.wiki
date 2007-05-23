@@ -1,4 +1,5 @@
 #summary Project overview page.
+#labels Featured
 
 = Tools Overview =
 
@@ -7,5 +8,4 @@
   # FSM meta-model;
   # transformer between XML FSM representation (see [AutomataXML]) and in-memory FSM model;
  # Java Genetic Algorithms Framework
-
 
