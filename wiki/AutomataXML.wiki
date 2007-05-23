@@ -1,4 +1,5 @@
 #summary Automata XML representation.
+#labels Phase-Implementation
 = Introduction =
 
 This XML based language is developed for storing and exchanging automata structures. More detailed description is planned.
