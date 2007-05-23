@@ -1,4 +1,4 @@
-#summary References.
+#summary Some references.
 #labels Featured
 
  * http://is.ifmo.ru/books/switch/1
