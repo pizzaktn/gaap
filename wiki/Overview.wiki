@@ -15,4 +15,5 @@
 
 = We are using =
 [http://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Maven_logo.gif/100px-Maven_logo.gif]
+
 [http://upload.wikimedia.org/wikipedia/ru/thumb/7/79/Subversion.png/200px-Subversion.png]
