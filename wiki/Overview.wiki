@@ -12,3 +12,6 @@
 = Problems =
  * [Flibs]
  * [Ant]
+
+= We are using =
+[http://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Maven_logo.gif/100px-Maven_logo.gif]
