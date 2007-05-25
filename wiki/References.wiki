@@ -6,3 +6,6 @@
  * http://en.wikipedia.org/wiki/Switch-technology
  * http://unimod.sourceforge.net/
  * XML+XSLT http://is.ifmo.ru/projects/metaauto/
+
+= Problems =
+ * http://unimod.sourceforge.net/wiki/index.php/UniMod_1.3_Samples_Prisoners_Problem
