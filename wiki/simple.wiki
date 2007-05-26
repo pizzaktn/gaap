@@ -1,5 +1,5 @@
 #summary Simple FSM implementation.
 
-package ru.ifmo.ctdev.gaap.sm.tree;
+package ru.ifmo.ctdev.gaap.sm.simple;
 
 Coming later.
