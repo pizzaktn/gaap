@@ -1,0 +1,3 @@
+#summary Simple FSM implementation.
+
+Coming later.
