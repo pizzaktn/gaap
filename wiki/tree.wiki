@@ -1,3 +1,5 @@
 #summary Tree FSM implementation.
 
+package ru.ifmo.ctdev.gaap.sm.tree;
+
 Coming later.
