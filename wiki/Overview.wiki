@@ -5,7 +5,7 @@
 
 *GAAP* project consists of the following tools:
  * Java Finite State Machines (FSM) Framework consist of:
-  # FSM meta-model;
+  # FSM meta-model (includes [simple] and [tree] FSM implementations);
   # transformer between XML FSM representation (see [AutomataXML]) and in-memory FSM model;
  * Java Genetic Algorithms Framework
 
