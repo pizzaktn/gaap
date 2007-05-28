@@ -8,7 +8,8 @@
   # FSM meta-model (includes [simple] and [tree] FSM implementations);
   # transformer between XML FSM representation (see [AutomataXML]) and in-memory FSM model;
  * Java Genetic Algorithms Framework consist of:
-  # coming later
+  # ...
+  # remote repository for individuals
 
 = Problems =
  * [Flibs]
