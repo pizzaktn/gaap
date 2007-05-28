@@ -8,4 +8,5 @@
  * XML+XSLT http://is.ifmo.ru/projects/metaauto/
 
 = Problems =
+ * http://en.wikipedia.org/wiki/Prisoner's_dilemma
  * http://unimod.sourceforge.net/wiki/index.php/UniMod_1.3_Samples_Prisoners_Problem
