@@ -1,7 +1,0 @@
-#summary Ant problem.
-#labels Problem
-
-=== References ===
- # Jefferson D., Collins R., Cooper C., Dyer M., Flowers M., Korf R., Taylor C., Wang A. The Genesys System. 1992. http://www.cs.ucla.edu/~dyer/Papers/AlifeTracker/Alife91Jefferson.html
- # Guttmann W. Simulated Evolution of Artificial, Path-Following Ants using a Genetic Algorithm. 2003. http://www.informatik.uni-ulm.de/pm/fileadmin/pm/home/walter/data/ants/
- # Angeline P. J., Pollack J. Evolutionary Module Acquisition // Proceedings of the Second Annual Conference on Evolutionary Programming. 2003. http://www.demo.cs.brandeis.edu/papers/ep93.pdf
