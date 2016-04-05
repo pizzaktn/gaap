@@ -1,0 +1,3 @@
+Aim of this project is to create a simple Java framework for implementing different genetic algorithms for automata-based programming.
+
+A more info are coming soon...
